@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="texto1" id="texto1">
+    <br>
+    <input type="button" value="Calcular Hash" onclick="criarHash()">
+    <br>
+    <textarea name="hashtexto" id="hash" cols="30" rows="10"></textarea>
+    
+    
+    <script>
+        async function criarHash() {
+            const texto = document.getElementById('texto1').value;
+            const buffer = new TextEncoder( 'utf-8' ).encode( texto );
+            const digest = await crypto.subtle.digest('SHA-1', buffer);
+            const hash = Array.from(new Uint8Array(digest)).map( x => x.toString(16).padStart(2,'0') ).join('');
+            document.getElementById('hash').value = hash;    
+        }
+    </script>
+</body>
+</html>

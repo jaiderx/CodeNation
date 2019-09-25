@@ -1,0 +1,225 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-color:#303030;
+	
+}
+
+header{
+	background-color: black;/* #333;*/
+	height: 3.5em;
+	color: white; /*#A9A9A9;*/
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+span{
+	color:red;
+	}
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle!important;
+}
+
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 50%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+	text-align:left;
+	color: white;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #A9A9A9;
+}
+
+label{
+	color: white;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 1.0em;
+	width: 100%;
+	color:white;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+	background-color:#202020;
+	width: 100%;
+}
+
+.grupo{
+	width: 33%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .7em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#778899;
+	border-color: #202020;
+	width: 40%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+	font-weight: bold!important;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+#msgerro{
+	color:#FFB6C1;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.75s;
+}
+
+placeholder{
+	color: white;
+}
+
+.linha-desafio{
+	color: white;
+	font-weight: bold;
+}
+
+#titulo-form{
+	text-align:left!important;
+}
+
+#filtro{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.invisible{
+	display: none;
+}
+
+#importar{
+	width: 35%;
+}
+
+#red-span{
+	font-weight: bold;
+	color: #FFC0CB;
+}
+
+#nome{
+	width: 97%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+input[type="file"] {
+	    display: none;
+}
+
+.botao {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #8B008B;
+  /*background-color: #778899;*/
+ /* border: none;*/
+  /*border-radius: 15px;*/
+  /*box-shadow: 0 9px #999;*/
+  font-weight: bold!important;
+  background: #B9DFFF;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.botao:hover {background-color: #016ABC}
+
+.botao:active {
+  background-color: #B9DFFF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+footer{
+	color: white;
+}
+

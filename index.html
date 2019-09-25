@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title class="nomeaba">Text Bar</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="tit1"></h1>
+			</div>
+		</header>
+		
+		<main>
+		
+		<section class="container"> <!-- Formulário -->
+			<h2 id="titulo-form">Inserir token e buscar desafio</h2>
+			
+			<form id="formFind">
+			<ul id="msgerro">
+			</ul>
+			<br>
+				<div><!--Nome-->
+					<label for="token">Token do usuário:</label>
+					<input id="tokenCN" name="token" type="text" placeholder="Digite o Token" class="campo campo-medio">
+				</div>
+				<span id="Erro1"class="red-span"></span>
+				<button id="buscar" class="botao bto-principal">1 - Buscar Desafio</button>
+			</form>
+			
+			
+		</section>	
+			<section class="container"> 
+				<h2 class = "tit2"></h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Param</th>
+							<th>Token</th>
+							<th>Texto Cifrado</th>
+							<th>Texto Decifrado</th><br>
+							<th>Criptografado</th>
+						</tr>
+
+					</thead>
+					<tbody id="tabela">						
+					</tbody>
+				</table>
+				<br>	
+				<button id="gerar" class="botao bto-principal">2 - Gerar JSON</button>
+				<form onsubmit="download(this['textojson'].value)">
+					<textarea name="textojson" id="textjson" cols="115" rows="12">Texto JSON</textarea>
+					<input type="submit" id="salvar" class="botao" value="3 - Salvar (Local)"></button>
+				</form>
+
+				<form method="POST" enctype="multipart/form-data" id="frm" >
+					<button id="upload" onclick="getFile()" class="botao">4 - Upload JSON</button>
+					<input id = "hiddenup" type="file" name="answer">
+					<span id="Erro2"class="red-span"></span>
+					<input type="submit" id="enviar" class="botao" value="5 - Enviar"></button>
+				</form>
+				<footer>
+					Desafio Codenation - Develop by: Jaider Xavier Jr. -  
+					<img src="http://vanilla-js.com/assets/button.png">
+				</footer>
+			</section>
+		</main>
+		<script src = "js/query.js"></script>
+		<script src = "js/functions.js"></script>
+		<script src = "js/main.js"></script>
+
+	</body>
+</html>
